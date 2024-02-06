@@ -1,4 +1,4 @@
-from functions import cuts, data, format_card, is_none, description, to_count, sum_
+from utils.functions import cuts, data, format_card, is_none, description, to_count, sum_
 
 listo = cuts()
 for i in range(len(listo)):

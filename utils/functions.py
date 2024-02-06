@@ -4,7 +4,7 @@ import datetime
 
 """загружаем данные с файла"""
 def operations():
-    with open("operations.json", 'r', encoding='utf-8-sig') as file:
+    with open("../src/operations.json", 'r', encoding='utf-8-sig') as file:
         operations_json = json.load(file)
     return operations_json
 
@@ -67,6 +67,8 @@ def format_card(i, listo):
         number_card_ = number_card(card)
         name_card_ = name_card(card)
         return name_card_, number_card_
+    else:
+        return False
 
 """Возвращает тип операции"""
 def description(i, listo):
